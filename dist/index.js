@@ -1,3 +1,5 @@
+'use strict';
+
 // Copyright (c) 2016 Uber Technologies, Inc.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -18,6 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-var GraphView = require('./components/graph-view.js')
+var GraphView = require('./components/graph-view.js');
 
 module.exports = GraphView;
+//# sourceMappingURL=index.js.map

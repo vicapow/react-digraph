@@ -1,3 +1,5 @@
+'use strict';
+
 // Copyright (c) 2016 Uber Technologies, Inc.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -18,16 +20,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-const test = require('tape');
+var test = require('tape');
 
-const reactDigraph = require('../');
-const GraphViewTests = require('./components/graph-view');
+var reactDigraph = require('../');
+var GraphViewTests = require('./components/graph-view');
 
-GraphViewTests()
+GraphViewTests();
 
 test('reactDigraph', function t(assert) {
-  assert.ok(typeof reactDigraph.default === 'function',
-    'exported correctly');
+  assert.ok(typeof reactDigraph.default === 'function', 'exported correctly');
 
   assert.end();
 });
+//# sourceMappingURL=index.js.map

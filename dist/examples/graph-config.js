@@ -1,4 +1,20 @@
-// Copyright (c) 2016 Uber Technologies, Inc.
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var EmptyShape = _react2.default.createElement(
+  "symbol",
+  { viewBox: "0 0 100 100", id: "empty" },
+  _react2.default.createElement("circle", { cx: "50", cy: "50", r: "45" })
+); // Copyright (c) 2016 Uber Technologies, Inc.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,39 +37,37 @@
 /*
   Example config for GraphView component
 */
-import React from 'react';
 
-const EmptyShape = (
-  <symbol viewBox="0 0 100 100" id="empty">
-    <circle cx="50" cy="50" r="45"></circle>
-  </symbol>
-)
 
-const SpecialShape = (
-  <symbol viewBox="0 0 100 100" id="special">
-    <rect transform="translate(50) rotate(45)" width="70" height="70"></rect>
-  </symbol>
-)
+var SpecialShape = _react2.default.createElement(
+  "symbol",
+  { viewBox: "0 0 100 100", id: "special" },
+  _react2.default.createElement("rect", { transform: "translate(50) rotate(45)", width: "70", height: "70" })
+);
 
-const SpecialChildShape = (
-  <symbol viewBox="0 0 100 100" id="specialChild">
-    <rect x="2.5" y="0" width="95" height="97.5" fill="rgba(30, 144, 255, 0.12)"></rect>
-  </symbol>
-)
+var SpecialChildShape = _react2.default.createElement(
+  "symbol",
+  { viewBox: "0 0 100 100", id: "specialChild" },
+  _react2.default.createElement("rect", { x: "2.5", y: "0", width: "95", height: "97.5", fill: "rgba(30, 144, 255, 0.12)" })
+);
 
-const EmptyEdgeShape = (
-  <symbol viewBox="0 0 50 50" id="emptyEdge">
-    <circle cx="25" cy="25" r="8" fill="currentColor"> </circle>
-  </symbol>
-)
+var EmptyEdgeShape = _react2.default.createElement(
+  "symbol",
+  { viewBox: "0 0 50 50", id: "emptyEdge" },
+  _react2.default.createElement(
+    "circle",
+    { cx: "25", cy: "25", r: "8", fill: "currentColor" },
+    " "
+  )
+);
 
-const SpecialEdgeShape = (
-  <symbol viewBox="0 0 50 50" id="specialEdge">
-    <rect transform="rotate(45)"  x="25" y="-4.5" width="15" height="15" fill="currentColor"></rect>
-  </symbol>
-)
+var SpecialEdgeShape = _react2.default.createElement(
+  "symbol",
+  { viewBox: "0 0 50 50", id: "specialEdge" },
+  _react2.default.createElement("rect", { transform: "rotate(45)", x: "25", y: "-4.5", width: "15", height: "15", fill: "currentColor" })
+);
 
-export default {
+exports.default = {
   NodeTypes: {
     empty: {
       typeText: "None",
@@ -65,13 +79,13 @@ export default {
       shapeId: "#special",
       shape: SpecialShape
     }
-  }, 
+  },
   NodeSubtypes: {
     specialChild: {
       shapeId: "#specialChild",
       shape: SpecialChildShape
     }
-  }, 
+  },
   EdgeTypes: {
     emptyEdge: {
       shapeId: "#emptyEdge",
@@ -82,4 +96,5 @@ export default {
       shape: SpecialEdgeShape
     }
   }
-}
+};
+//# sourceMappingURL=graph-config.js.map
