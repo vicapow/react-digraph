@@ -76,6 +76,7 @@
     "lint": "eslint src",
     "precommit": "npm run lint -s",
     "prefast-test": "npm run prepublish",
+    "postinstall": "npm run build",
     "prepublish": "npm run build",
     "test": "NODE_ENV=test npm run lint && npm run fast-test",
     "view-cover": "npm run cover -- --report=html && opn ./coverage/index.html"
